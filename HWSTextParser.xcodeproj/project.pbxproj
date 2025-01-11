@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AB3974072D33091D0007B0D2 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = AB3974062D33091D0007B0D2 /* ArgumentParser */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		AB3973F62D32A3E40007B0D2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB3974072D33091D0007B0D2 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 			);
 			name = HWSTextParser;
 			packageProductDependencies = (
+				AB3974062D33091D0007B0D2 /* ArgumentParser */,
 			);
 			productName = HWSTextParser;
 			productReference = AB3973F82D32A3E40007B0D2 /* HWSTextParser */;
@@ -106,6 +112,9 @@
 			);
 			mainGroup = AB3973EF2D32A3E40007B0D2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AB3974052D33091D0007B0D2 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AB3973F92D32A3E40007B0D2 /* Products */;
 			projectDirPath = "";
@@ -289,6 +298,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB3974052D33091D0007B0D2 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB3974062D33091D0007B0D2 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB3974052D33091D0007B0D2 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AB3973F02D32A3E40007B0D2 /* Project object */;
 }
